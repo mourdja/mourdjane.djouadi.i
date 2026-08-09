@@ -37,12 +37,12 @@ img {
 ======================================== */
 
 .site-header {
-    background-color: #222;
+    background-color: #fff8f5;
     padding: 1rem 0;
 }
 
 .logo h1 {
-    color: #c78c06;
+    color: #b9716a;
     font-size: 1.8rem;
     text-align: center;
     margin-bottom: 1rem;
@@ -58,15 +58,15 @@ img {
 
 .main-navigation a {
     display: block;
-    color: white;
+    color: #5a4a42;
     text-decoration: none;
     padding: 0.75rem 1rem;
 }
 
 .main-navigation a:hover,
 .main-navigation a:focus {
-    background-color: #c78c06;
-    color: #222;
+    background-color: #ead9d0;
+    color: #b9716a;
 }
 /* ========================================
    SEARCH FORM
@@ -80,14 +80,14 @@ img {
 .search-form input {
     flex: 1;
     padding: 0.75rem;
-    border: 1px solid #c78c06;
+    border: 1px solid #b9716a;
     font-family: "Open Sans", sans-serif;
 }
 
 .search-form button {
     padding: 0.75rem 1rem;
-    background-color: #c78c06;
-    color: #222;
+    background-color: #b9716a;
+    color: #fff8f5;
     border: none;
     cursor: pointer;
     font-family: "Open Sans", sans-serif;
@@ -100,7 +100,7 @@ img {
 
 .hero {
     position: relative;
-    background-color: #222;
+    background-color: #ead9d0;
 }
 
 .hero img {
@@ -110,7 +110,7 @@ img {
 }
 
 .hero-content {
-    background-color: rgba(34, 34, 34, 0.8);
+    background-color: rgba(90, 74, 66, 0.8);
     color: white;
     padding: 1.5rem;
 }
@@ -126,8 +126,8 @@ img {
 
 .hero-button {
     display: inline-block;
-    background-color: #c78c06;
-    color: #222;
+    background-color: #b9716a;
+    color: #fff8f5;
     padding: 0.8rem 1.2rem;
     text-decoration: none;
     font-weight: 700;
@@ -211,7 +211,7 @@ img {
 
 .vision {
     padding: 2rem 1rem;
-    background-color: #222;
+    background-color: #white;
     color: white;
 }
 
@@ -221,7 +221,7 @@ img {
 }
 
 .vision-content h2 {
-    color: #c78c06;
+    color: #b9716a;
     margin-bottom: 1rem;
 }
 
@@ -283,8 +283,8 @@ img {
 .contact-form button {
     margin-top: 1rem;
     padding: 0.75rem 1.5rem;
-    background-color: #c78c06;
-    color: #222;
+    background-color: #b9716a;
+    color: #fff8f5;
     border: none;
     cursor: pointer;
 }
@@ -297,7 +297,7 @@ table {
 
 th,
 td {
-    border: 1px solid #222;
+    border: 1px solid #d8b4a6;
     padding: 0.75rem;
     text-align: left;
 }
@@ -308,7 +308,7 @@ td {
 ======================================== */
 
 .site-footer {
-    background-color: #222;
+    background-color: #5a4a42;
     color: white;
     text-align: center;
     padding: 1.5rem 1rem;
