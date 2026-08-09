@@ -16,7 +16,7 @@
 body {
     font-family: "Open Sans", sans-serif;
     background-color: white;
-    color: #222;
+    color: #d8b4a6;
     line-height: 1.5;
 }
 
@@ -198,7 +198,7 @@ img {
 
 .collection-card a {
     display: inline-block;
-    background-color: #222;
+    background-color: #d8b4a6;
     color: white;
     padding: 0.75rem 1rem;
     text-decoration: none;
