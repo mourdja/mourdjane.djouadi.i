@@ -1,4 +1,11 @@
 /* ========================================
+   GOOGLE FONTS
+======================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap');
+
+
+/* ========================================
    CSS RESET
 ======================================== */
 
@@ -15,9 +22,16 @@
 
 body {
     font-family: "Open Sans", sans-serif;
-    background-color: white;
-    color: #d8b4a6;
-    line-height: 1.5;
+    background-color: #faf7f5;
+    color: #333333;
+    line-height: 1.6;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Playfair Display", serif;
+    color: #8b6f6b;
 }
 
 img {
@@ -32,20 +46,26 @@ img {
     margin: 0 auto;
     padding: 0 1rem;
 }
+
+
 /* ========================================
    HEADER AND NAVIGATION
 ======================================== */
 
 .site-header {
-    background-color: #fff8f5;
+    background-color: #faf7f5;
     padding: 1rem 0;
+    border-bottom: 1px solid #eadbd7;
 }
 
 .logo h1 {
-    color: #b9716a;
-    font-size: 1.8rem;
+    font-family: "Playfair Display", serif;
+    color: #8b6f6b;
+    font-size: 2.2rem;
+    font-weight: 600;
     text-align: center;
     margin-bottom: 1rem;
+    letter-spacing: 0.5px;
 }
 
 .main-navigation ul {
@@ -53,21 +73,24 @@ img {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 0.5rem;
+    gap: 0.4rem;
 }
 
 .main-navigation a {
     display: block;
-    color: #5a4a42;
+    color: #333333;
     text-decoration: none;
     padding: 0.75rem 1rem;
+    font-weight: 500;
+    transition: 0.3s;
 }
 
 .main-navigation a:hover,
 .main-navigation a:focus {
-    background-color: #ead9d0;
-    color: #b9716a;
+    color: #c98984;
 }
+
+
 /* ========================================
    SEARCH FORM
 ======================================== */
@@ -80,17 +103,23 @@ img {
 .search-form input {
     flex: 1;
     padding: 0.75rem;
-    border: 1px solid #b9716a;
+    border: 1px solid #d8b4a6;
+    background-color: white;
     font-family: "Open Sans", sans-serif;
 }
 
 .search-form button {
     padding: 0.75rem 1rem;
-    background-color: #b9716a;
-    color: #fff8f5;
+    background-color: #c98984;
+    color: white;
     border: none;
     cursor: pointer;
     font-family: "Open Sans", sans-serif;
+    transition: 0.3s;
+}
+
+.search-form button:hover {
+    background-color: #8b6f6b;
 }
 
 
@@ -100,7 +129,7 @@ img {
 
 .hero {
     position: relative;
-    background-color: #ead9d0;
+    background-color: #f5e6e3;
 }
 
 .hero img {
@@ -110,52 +139,61 @@ img {
 }
 
 .hero-content {
-    background-color: rgba(90, 74, 66, 0.8);
-    color: white;
-    padding: 1.5rem;
+    background-color: rgba(250, 247, 245, 0.92);
+    color: #333333;
+    padding: 2rem;
 }
 
 .hero-content h2 {
-    font-size: 2rem;
+    font-size: 2.4rem;
+    color: #6f5753;
     margin-bottom: 1rem;
 }
 
 .hero-content p {
+    color: #5f5552;
     margin-bottom: 1.5rem;
 }
 
 .hero-button {
     display: inline-block;
-    background-color: #b9716a;
-    color: #fff8f5;
-    padding: 0.8rem 1.2rem;
+    background-color: #c98984;
+    color: white;
+    padding: 0.85rem 1.4rem;
     text-decoration: none;
-    font-weight: 700;
+    font-weight: 600;
+    border-radius: 3px;
+    transition: 0.3s;
 }
 
 .hero-button:hover,
 .hero-button:focus {
-    background-color: #ffe6ac;
+    background-color: #8b6f6b;
 }
+
+
 /* ========================================
    ABOUT SECTION
 ======================================== */
 
 .about-section {
-    padding: 2rem 1rem;
-    background-color: #ffe6ac;
+    padding: 3rem 1rem;
+    background-color: #f5e6e3;
 }
 
 .about-image img {
     width: 100%;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
 }
 
 .about-content h2 {
+    color: #8b6f6b;
+    font-size: 2rem;
     margin-bottom: 1rem;
 }
 
 .about-content p {
+    color: #514845;
     margin-bottom: 1rem;
 }
 
@@ -165,12 +203,14 @@ img {
 ======================================== */
 
 .collections {
-    padding: 2rem 1rem;
+    padding: 3rem 1rem;
+    background-color: #faf7f5;
 }
 
 .collections h2 {
     text-align: center;
-    margin-bottom: 1.5rem;
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
 }
 
 .collection-grid {
@@ -180,28 +220,47 @@ img {
 }
 
 .collection-card {
-    background-color: #ffe6ac;
-    padding-bottom: 1rem;
+    background-color: white;
+    padding-bottom: 1.5rem;
+    box-shadow: 0 5px 20px rgba(80, 60, 55, 0.08);
+    transition: 0.3s;
+}
+
+.collection-card:hover {
+    transform: translateY(-4px);
 }
 
 .collection-card img {
     width: 100%;
-    height: 250px;
+    height: 280px;
     object-fit: cover;
 }
 
-.collection-card h3,
-.collection-card p,
-.collection-card a {
+.collection-card h3 {
+    color: #8b6f6b;
+    font-size: 1.4rem;
+    margin: 1rem;
+}
+
+.collection-card p {
+    color: #625754;
     margin: 1rem;
 }
 
 .collection-card a {
     display: inline-block;
-    background-color: #d8b4a6;
+    background-color: #c98984;
     color: white;
     padding: 0.75rem 1rem;
     text-decoration: none;
+    margin: 0 1rem;
+    border-radius: 3px;
+    transition: 0.3s;
+}
+
+.collection-card a:hover,
+.collection-card a:focus {
+    background-color: #8b6f6b;
 }
 
 
@@ -210,19 +269,24 @@ img {
 ======================================== */
 
 .vision {
-    padding: 2rem 1rem;
-    background-color: #white;
-    color: white;
+    padding: 3rem 1rem;
+    background-color: #ffffff;
+    color: #333333;
 }
 
 .vision img {
     width: 100%;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
 }
 
 .vision-content h2 {
-    color: #b9716a;
+    color: #8b6f6b;
+    font-size: 2rem;
     margin-bottom: 1rem;
+}
+
+.vision-content p {
+    color: #514845;
 }
 
 
@@ -231,22 +295,33 @@ img {
 ======================================== */
 
 .team-section {
-    padding: 2rem 1rem;
+    padding: 3rem 1rem;
+    background-color: #faf7f5;
 }
 
 .team-section h2 {
     text-align: center;
-    margin-bottom: 1.5rem;
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
 }
 
 .team-member {
-    background-color: #ffe6ac;
-    padding: 1rem;
+    background-color: #f5e6e3;
+    padding: 1.5rem;
 }
 
 .team-member img {
     width: 100%;
     margin-bottom: 1rem;
+}
+
+.team-member h3 {
+    color: #8b6f6b;
+    margin-bottom: 0.5rem;
+}
+
+.team-member p {
+    color: #514845;
 }
 
 
@@ -255,15 +330,18 @@ img {
 ======================================== */
 
 .contact-section {
-    padding: 2rem 1rem;
+    padding: 3rem 1rem;
+    background-color: white;
 }
 
 .contact-section h2 {
+    color: #8b6f6b;
     margin-bottom: 1.5rem;
 }
 
 .contact-form label {
     display: block;
+    color: #514845;
     margin-top: 1rem;
     margin-bottom: 0.5rem;
 }
@@ -271,9 +349,15 @@ img {
 .contact-form input,
 .contact-form textarea {
     width: 100%;
-    padding: 0.75rem;
-    border: 1px solid #222;
+    padding: 0.8rem;
+    border: 1px solid #d8b4a6;
+    background-color: #faf7f5;
     font-family: "Open Sans", sans-serif;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: 2px solid #c98984;
 }
 
 .contact-form textarea {
@@ -282,12 +366,23 @@ img {
 
 .contact-form button {
     margin-top: 1rem;
-    padding: 0.75rem 1.5rem;
-    background-color: #b9716a;
-    color: #fff8f5;
+    padding: 0.85rem 1.5rem;
+    background-color: #c98984;
+    color: white;
     border: none;
     cursor: pointer;
+    font-weight: 600;
+    transition: 0.3s;
 }
+
+.contact-form button:hover {
+    background-color: #8b6f6b;
+}
+
+
+/* ========================================
+   TABLE
+======================================== */
 
 table {
     width: 100%;
@@ -297,9 +392,19 @@ table {
 
 th,
 td {
-    border: 1px solid #d8b4a6;
+    border: 1px solid #eadbd7;
     padding: 0.75rem;
     text-align: left;
+}
+
+th {
+    background-color: #f5e6e3;
+    color: #8b6f6b;
+}
+
+td {
+    background-color: white;
+    color: #514845;
 }
 
 
@@ -308,10 +413,14 @@ td {
 ======================================== */
 
 .site-footer {
-    background-color: #5a4a42;
-    color: white;
+    background-color: #5f504c;
+    color: #f7eeee;
     text-align: center;
-    padding: 1.5rem 1rem;
+    padding: 2rem 1rem;
+}
+
+.site-footer p {
+    color: #f7eeee;
 }
 
 
@@ -347,17 +456,26 @@ td {
 
     .hero-content {
         position: absolute;
-        left: 10%;
+        left: 8%;
         top: 50%;
         transform: translateY(-50%);
-        max-width: 550px;
+        max-width: 520px;
+        padding: 2.5rem;
+    }
+
+    .hero-content h2 {
+        font-size: 3rem;
     }
 
     .about-section {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 2rem;
+        gap: 3rem;
         align-items: center;
+    }
+
+    .about-image img {
+        margin-bottom: 0;
     }
 
     .collection-grid {
@@ -367,8 +485,12 @@ td {
     .vision {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 2rem;
+        gap: 3rem;
         align-items: center;
+    }
+
+    .vision img {
+        margin-bottom: 0;
     }
 
     .team-container {
@@ -383,6 +505,6 @@ td {
     .contact-container {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 2rem;
+        gap: 3rem;
     }
 }
