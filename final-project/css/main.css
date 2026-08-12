@@ -83,9 +83,6 @@ p {
     margin-bottom: 15px;
 }
 
-
-/* Accessibility */
-
 .sr-only {
     position: absolute;
     width: 1px;
@@ -117,7 +114,7 @@ p {
 
 .logo {
     background-color: #c78c06;
-    padding: 20px 15px 70px;
+    padding: 20px 15px 65px;
 }
 
 .logo img {
@@ -143,7 +140,7 @@ p {
     display: block;
     padding: 20px;
     color: #c78c06;
-    font-size: 1.1rem;
+    font-size: 1.05rem;
 }
 
 .main-nav a:hover,
@@ -173,7 +170,7 @@ p {
 }
 
 .search-form button {
-    padding: 10px 14px;
+    width: 52px;
     border: 1px solid #c78c06;
     background-color: #222;
     color: #c78c06;
@@ -186,22 +183,16 @@ p {
 ======================================== */
 
 .hero {
-    background-image:
-        linear-gradient(
-            rgba(34, 34, 34, 0.35),
-            rgba(34, 34, 34, 0.35)
-        ),
-        url("../images/main-banner.jpg");
-
+    background-image: url("../images/main-banner.jpg");
     background-size: cover;
     background-position: center;
-    padding: 60px 0;
+    padding: 55px 0;
 }
 
 .hero-content {
-    background-color: rgba(34, 34, 34, 0.75);
+    background-color: rgba(34, 34, 34, 0.78);
     color: white;
-    padding: 25px 15px;
+    padding: 25px 20px;
 }
 
 .hero-content h1 {
@@ -258,8 +249,8 @@ p {
 ======================================== */
 
 .services-section {
-    padding-top: 40px;
-    padding-bottom: 40px;
+    background-color: white;
+    padding: 40px 0;
 }
 
 .services-section h2 {
@@ -298,12 +289,12 @@ p {
     padding: 20px 30px;
     background-color: #222;
     color: white;
-    font-size: 1.1rem;
+    font-size: 1.15rem;
 }
 
 .dark-button span {
     margin-left: 10px;
-    color: #c78c06;
+    color: white;
 }
 
 
@@ -314,8 +305,8 @@ p {
 .vision-section {
     background-image:
         linear-gradient(
-            rgba(34, 34, 34, 0.45),
-            rgba(34, 34, 34, 0.45)
+            rgba(34, 34, 34, 0.4),
+            rgba(34, 34, 34, 0.4)
         ),
         url("../images/vision.jpg");
 
@@ -341,11 +332,7 @@ p {
     border: 1px solid #c78c06;
     background-color: #222;
     color: white;
-}
-
-.vision-button span {
-    margin-left: 10px;
-    color: #c78c06;
+    font-size: 1.15rem;
 }
 
 
@@ -354,8 +341,8 @@ p {
 ======================================== */
 
 .team-section {
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding: 40px 0;
+    background-color: white;
 }
 
 .team-section h2 {
@@ -365,6 +352,7 @@ p {
 .team-list {
     display: flex;
     flex-direction: column;
+    gap: 15px;
 }
 
 .team-member {
@@ -396,8 +384,8 @@ p {
 ======================================== */
 
 .contact-section {
-    padding-top: 40px;
-    padding-bottom: 40px;
+    background-color: white;
+    padding: 40px 0;
 }
 
 .contact-section h2 {
@@ -417,7 +405,7 @@ p {
 }
 
 
-/* Contact Form */
+/* Contact form */
 
 .contact-form {
     display: flex;
@@ -485,6 +473,7 @@ p {
 ======================================== */
 
 .location-area iframe {
+    display: block;
     width: 100%;
     height: 350px;
     border: 0;
@@ -498,8 +487,7 @@ p {
 .site-footer {
     background-color: #222;
     color: #c78c06;
-    padding-top: 30px;
-    padding-bottom: 20px;
+    padding: 30px 0 20px;
 }
 
 .site-footer p {
@@ -513,20 +501,20 @@ p {
 
 
 /* ========================================
-   DESKTOP STYLES
-   760PX AND ABOVE
+   DESKTOP - 760PX AND ABOVE
 ======================================== */
 
 @media screen and (min-width: 760px) {
 
     /* ========================================
-       HEADER - DESKTOP
+       HEADER DESKTOP
     ======================================== */
 
     .header-container {
         display: flex;
         align-items: center;
         gap: 20px;
+        min-height: 115px;
     }
 
     .logo {
@@ -536,13 +524,11 @@ p {
     }
 
     .logo img {
-        width: 80px;
+        width: 85px;
     }
 
 
-    /* ========================================
-       NAVIGATION - DESKTOP
-    ======================================== */
+    /* Navigation */
 
     .main-nav {
         flex: 1;
@@ -550,8 +536,8 @@ p {
 
     .main-nav ul {
         flex-direction: row;
-        align-items: center;
         justify-content: space-between;
+        align-items: center;
     }
 
     .main-nav li {
@@ -559,57 +545,58 @@ p {
     }
 
     .main-nav a {
-        padding: 20px 25px;
+        padding: 20px 24px;
     }
 
 
-    /* ========================================
-       SEARCH - DESKTOP
-    ======================================== */
+    /* Search */
 
     .search-form {
-        width: 250px;
+        width: 260px;
         flex-shrink: 0;
     }
 
 
     /* ========================================
-       HERO - DESKTOP
+       HERO DESKTOP
     ======================================== */
 
     .hero {
+        min-height: 500px;
+        display: flex;
+        align-items: center;
         padding: 40px 0;
     }
 
+    .hero .container {
+        width: 100%;
+    }
+
     .hero-content {
-        padding: 40px 25px;
         max-width: 1000px;
+        padding: 35px 25px;
     }
 
     .hero-content h1 {
-        font-size: 4.5rem;
-        max-width: 900px;
+        font-size: 4rem;
+        max-width: 850px;
     }
 
 
     /* ========================================
-       ABOUT - DESKTOP
+       ABOUT DESKTOP
     ======================================== */
 
     .about-container {
-        display: flex;
-        align-items: stretch;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
         padding-top: 0;
         padding-bottom: 0;
     }
 
-    .about-image,
-    .about-content {
-        width: 50%;
-    }
-
     .about-image img {
         height: 100%;
+        min-height: 340px;
         object-fit: cover;
     }
 
@@ -619,11 +606,12 @@ p {
 
 
     /* ========================================
-       SERVICES - DESKTOP
+       SERVICES DESKTOP
     ======================================== */
 
     .services-grid {
         grid-template-columns: repeat(6, 1fr);
+        gap: 15px;
     }
 
     .service-large {
@@ -634,19 +622,25 @@ p {
         grid-column: span 2;
     }
 
-    .service-card img {
-        height: 220px;
-        object-fit: cover;
+    .service-card {
+        display: flex;
+        flex-direction: column;
     }
 
     .service-large img {
         height: 300px;
+        object-fit: cover;
+    }
+
+    .service-card:not(.service-large) img {
+        height: 220px;
+        object-fit: cover;
     }
 
     .service-content {
         display: flex;
         flex-direction: column;
-        height: 100%;
+        flex: 1;
     }
 
     .dark-button {
@@ -658,20 +652,32 @@ p {
 
 
     /* ========================================
-       VISION - DESKTOP
+       VISION DESKTOP
     ======================================== */
 
     .vision-section {
+        min-height: 270px;
+        display: flex;
+        align-items: center;
         padding: 40px 0;
+    }
+
+    .vision-content {
+        max-width: 950px;
     }
 
 
     /* ========================================
-       TEAM - DESKTOP
+       TEAM DESKTOP
     ======================================== */
+
+    .team-list {
+        gap: 0;
+    }
 
     .team-member {
         display: flex;
+        min-height: 380px;
     }
 
     .team-image,
@@ -680,6 +686,7 @@ p {
     }
 
     .team-image img {
+        width: 100%;
         height: 100%;
         object-fit: cover;
     }
@@ -694,7 +701,7 @@ p {
 
 
     /* ========================================
-       CONTACT - DESKTOP
+       CONTACT DESKTOP
     ======================================== */
 
     .contact-grid {
@@ -702,6 +709,7 @@ p {
         grid-template-areas:
             "message location"
             "hours hours";
+        gap: 30px;
         align-items: start;
     }
 
@@ -718,6 +726,6 @@ p {
     }
 
     .location-area iframe {
-        height: 420px;
+        height: 390px;
     }
 }
