@@ -2,71 +2,109 @@
 <html lang="en">
 
 <head>
-    <!-- Meta Information -->
+    <!-- ========================================
+         META INFORMATION
+    ========================================= -->
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Page Title -->
-    <title>M Atelier Élégance | Custom Jewelry</title>
+    <title>Three Star Media</title>
 
     <!-- Google Font -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<!-- CSS -->
-<link rel="stylesheet" href="css/main.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
 
-    <!-- ========================= -->
-    <!-- HEADER -->
-    <!-- ========================= -->
+    <!-- ========================================
+         HEADER
+    ========================================= -->
 
     <header class="site-header">
 
-        <div class="container">
+        <div class="container header-container">
 
             <!-- Logo -->
 
             <div class="logo">
-                <h1>M Atelier Élégance</h1>
+
+                <a href="#home">
+
+                    <img
+                        src="images/logo.png"
+                        alt="Three Star Media logo">
+
+                </a>
+
             </div>
+
 
             <!-- Navigation -->
 
-            <nav class="main-navigation">
+            <nav class="main-nav" aria-label="Main navigation">
 
                 <ul>
 
-                    <li><a href="#home">Home</a></li>
+                    <li>
+                        <a href="#home" class="active">
+                            Home
+                        </a>
+                    </li>
 
-                    <li><a href="#about">About</a></li>
+                    <li>
+                        <a href="#about">
+                            About Us
+                        </a>
+                    </li>
 
-                    <li><a href="#collections">Collections</a></li>
+                    <li>
+                        <a href="#services">
+                            Services
+                        </a>
+                    </li>
 
-                    <li><a href="#vision">Vision</a></li>
+                    <li>
+                        <a href="#team">
+                            Team
+                        </a>
+                    </li>
 
-                    <li><a href="#team">Team</a></li>
-
-                    <li><a href="#contact">Contact</a></li>
+                    <li>
+                        <a href="#contact">
+                            Contact
+                        </a>
+                    </li>
 
                 </ul>
 
             </nav>
 
-            <!-- Search -->
 
-            <form class="search-form">
+            <!-- Search Form -->
+
+            <form class="search-form" action="#" method="get">
+
+                <label for="search" class="sr-only">
+                    Search
+                </label>
 
                 <input
                     type="search"
+                    id="search"
                     name="search"
                     placeholder="Search">
 
-                <button type="submit">
-                    Search
+                <button type="submit" aria-label="Search">
+                    &#128269;
                 </button>
 
             </form>
@@ -75,368 +113,522 @@
 
     </header>
 
-    <!-- ========================= -->
-    <!-- MAIN -->
-    <!-- ========================= -->
+
+    <!-- ========================================
+         MAIN CONTENT
+    ========================================= -->
 
     <main>
 
-        <!-- Hero Banner -->
+
+        <!-- ========================================
+             HERO
+        ========================================= -->
 
         <section id="home" class="hero">
 
-            <img
-                src="images/bijoux_luxe.jpeg"
-                alt="Luxury Jewelry">
+            <div class="container hero-container">
 
-            <div class="hero-content">
+                <div class="hero-content">
 
-                <h2>
-                    Jewelry Designed Around Your Story
-                </h2>
-
-                <p>
-
-                    Personalized engagement rings, wedding bands,
-                    traditional jewelry and handcrafted luxury
-                    pieces made especially for you.
-
-                </p>
-
-                <a
-                    href="#contact"
-                    class="hero-button">
-
-                    Book a Consultation
-
-                </a>
-
-            </div>
-
-        </section>
-
-        <!-- About -->
-
-        <section
-            id="about"
-            class="about-section">
-
-            <div class="about-image">
-
-                <img
-                    src="images/about.jpeg"
-                    alt="Jewelry Workshop">
-
-            </div>
-
-            <article class="about-content">
-
-                <h2>
-                    About M Atelier Élégance
-                </h2>
-
-                <p>
-
-                    M Atelier Élégance creates
-                    personalized jewelry for
-                    engagements, weddings,
-                    anniversaries and life's
-                    most meaningful moments.
-
-                </p>
-
-                <p>
-
-                    Every creation is designed
-                    with elegance, craftsmanship
-                    and attention to every detail.
-
-                </p>
-
-            </article>
-
-        </section>
-                <!-- ========================= -->
-        <!-- COLLECTIONS -->
-        <!-- ========================= -->
-
-        <section id="collections" class="collections">
-
-            <h2>Our Collections</h2>
-
-            <div class="collection-grid">
-
-                <article class="collection-card">
-
-                    <img src="images/engagement.jpeg"
-                         alt="Engagement Ring">
-
-                    <h3>Engagement Rings</h3>
+                    <h1>
+                        Welcome to Three Star Media
+                    </h1>
 
                     <p>
-                        Elegant rings designed to celebrate
-                        the beginning of your forever.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Magnam rerum voluptas nesciunt quam nostrum similique nihil
+                        laboriosam provident neque, recusandae voluptate temporibus.
+                        Animi accusamus id fuga voluptatibus facilis iusto consequuntur.
                     </p>
 
-                    <a href="#">
-                        Discover Collection
+                    <a href="#contact" class="gold-button">
+                        Connect with us
+                        <span>&#9654;</span>
                     </a>
-
-                </article>
-
-                <article class="collection-card">
-
-                    <img src="images/wedding.jpeg"
-                         alt="Wedding Rings">
-
-                    <h3>Wedding Bands</h3>
-
-                    <p>
-                        Timeless wedding bands crafted
-                        for every couple.
-                    </p>
-
-                    <a href="#">
-                        Discover Collection
-                    </a>
-
-                </article>
-
-                <article class="collection-card">
-
-                    <img src="images/modern-jewelry.jpeg"
-                         alt="Custom Jewelry">
-
-                    <h3>Custom Jewelry</h3>
-
-                    <p>
-                        Jewelry created from your own
-                        ideas and inspiration.
-                    </p>
-
-                    <a href="#">
-                        Discover Collection
-                    </a>
-
-                </article>
-
-                <article class="collection-card">
-
-                    <img src="images/traditional-jewelry.jpeg"
-                         alt="Traditional Jewelry">
-
-                    <h3>Traditional Jewelry</h3>
-
-                    <p>
-                        Traditional pieces inspired
-                        by culture and family heritage.
-                    </p>
-
-                    <a href="#">
-                        Discover Collection
-                    </a>
-
-                </article>
-
-                <article class="collection-card">
-
-                    <img src="images/gold-jewelry.jpeg"
-                         alt="Gold Jewelry">
-
-                    <h3>Gold Jewelry</h3>
-
-                    <p>
-                        Elegant gold jewelry designed
-                       for timeless beauty and style.
-                    </p>
-
-                    <a href="#">
-                        Discover Collection
-                    </a>
-
-                </article>
-
-                <article class="collection-card">
-
-                    <img src="images/rings.jpeg"
-                         alt="Rings">
-
-                    <h3>Rings</h3>
-
-                    <p>
-                        Personalized rings for every occasion.
-                    </p>
-
-                    <a href="#">
-                        Discover Collection
-                    </a>
-
-                </article>
-
-            </div>
-
-        </section>
-
-        <!-- ========================= -->
-        <!-- OUR VISION -->
-        <!-- ========================= -->
-
-        <section id="vision" class="vision">
-
-            <img src="images/traditional_look.jpeg"
-                 alt="Traditional Jewelry">
-
-            <div class="vision-content">
-
-                <h2>
-                    Our Vision
-                </h2>
-
-                <p>
-
-                    We believe every piece of jewelry
-                    should tell a unique story and
-                    become a treasured memory that
-                    lasts forever.
-
-                </p>
-
-                <a href="#">
-                    Learn More
-                </a>
-
-            </div>
-
-        </section>
-                <!-- ========================= -->
-        <!-- OUR TEAM -->
-        <!-- ========================= -->
-
-        <section id="team" class="team-section">
-
-            <h2>Our Team</h2>
-
-            <div class="team-container">
-
-                <article class="team-member">
-
-                    <img src="images/mourdjane.png"
-                        alt="Mourdjane Djouadi">
-            
-
-                    <div class="team-info">
-
-                        <h3>Mourdjane Djouadi</h3>
-
-                        <h4>Founder & Creative Designer</h4>
-
-                        <p>
-                            <p>
-                                Passionate about creating elegant,
-                                timeless and personalized jewelry,
-                                I combine modern design with traditional
-                                inspiration to create pieces that celebrate
-                                life's most meaningful moments.
-</p>
-                        </p>
-
-                    </div>
-
-                </article>
-
-    
-
-
-            </div>
-
-        </section>
-
-        <!-- ========================= -->
-        <!-- CONTACT -->
-        <!-- ========================= -->
-
-        <section id="contact" class="contact-section">
-
-            <h2>Contact Us</h2>
-
-            <div class="contact-container">
-
-                <div class="contact-form">
-
-                    <h3>Book a Consultation</h3>
-
-                    <form>
-
-                        <label for="fullname">Full Name</label>
-
-                        <input
-                            type="text"
-                            id="fullname"
-                            name="fullname">
-
-                        <label for="email">
-                            Email
-                        </label>
-
-                        <input
-                            type="email"
-                            id="email"
-                            name="email">
-
-                        <label for="phone">
-                            Phone Number
-                        </label>
-
-                        <input
-                            type="tel"
-                            id="phone"
-                            name="phone">
-
-                        <label for="message">
-                            Tell us about your dream jewelry
-                        </label>
-
-                        <textarea
-                            id="message"
-                            name="message">
-                        </textarea>
-
-                        <button type="submit">
-                            Send Message
-                        </button>
-
-                    </form>
 
                 </div>
 
-                <div class="contact-information">
+            </div>
 
-                    <h3>Hours of Operation</h3>
+        </section>
 
-                    <table>
 
-                        <tr>
-                            <th>Days</th>
-                            <th>Hours</th>
-                        </tr>
+        <!-- ========================================
+             ABOUT US
+        ========================================= -->
 
-                        <tr>
-                            <td>Monday - Friday</td>
-                            <td>9:00 AM - 6:00 PM</td>
-                        </tr>
+        <section id="about" class="about-section">
 
-                        <tr>
-                            <td>Saturday</td>
-                            <td>10:00 AM - 4:00 PM</td>
-                        </tr>
+            <div class="container about-container">
 
-                        <tr>
-                            <td>Sunday</td>
-                            <td>Closed</td>
-                        </tr>
+                <!-- About Image -->
 
-                    </table>
+                <div class="about-image">
 
+                    <img
+                        src="images/about-us.jpg"
+                        alt="Three Star Media office">
+
+                </div>
+
+
+                <!-- About Content -->
+
+                <article class="about-content">
+
+                    <h2>
+                        About Us
+                    </h2>
+
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Libero unde repellendus exercitationem asperiores ducimus
+                        placeat, maxime soluta nesciunt pariatur aliquam consequuntur
+                        sequi saepe sint praesentium laboriosam perferendis eius amet ad.
+                    </p>
+
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Animi, velit ipsam? Atque accusamus, excepturi corrupti sunt
+                        reiciendis soluta quo commodi quidem, non perferendis vel sed
+                        facilis rerum cum in exercitationem.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- ========================================
+             OUR SERVICES
+        ========================================= -->
+
+        <section id="services" class="services-section">
+
+            <div class="container">
+
+                <h2>
+                    Our Services
+                </h2>
+
+                <div class="services-grid">
+
+
+                    <!-- Digital Transformation -->
+
+                    <article class="service-card service-large">
+
+                        <img
+                            src="images/digital.jpg"
+                            alt="Digital Transformation">
+
+                        <div class="service-content">
+
+                            <h3>
+                                Digital Transformation
+                            </h3>
+
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Eius vel, rem inventore quo tempora animi mollitia eaque
+                                error qui consectetur in reprehenderit magnam at vitae
+                                corporis quaerat deleniti explicabo nisi.
+                            </p>
+
+                            <a href="#" class="dark-button">
+                                Digital Plans
+                                <span>&#9654;</span>
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- Marketing -->
+
+                    <article class="service-card service-large">
+
+                        <img
+                            src="images/marketing.jpg"
+                            alt="Marketing">
+
+                        <div class="service-content">
+
+                            <h3>
+                                Marketing
+                            </h3>
+
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Eius vel, rem inventore quo tempora animi mollitia eaque
+                                error qui consectetur in reprehenderit magnam at vitae
+                                corporis quaerat deleniti explicabo nisi.
+                            </p>
+
+                            <a href="#" class="dark-button">
+                                Marketing Plans
+                                <span>&#9654;</span>
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- Video Production -->
+
+                    <article class="service-card">
+
+                        <img
+                            src="images/video.jpg"
+                            alt="Video Production">
+
+                        <div class="service-content">
+
+                            <h3>
+                                Video Production
+                            </h3>
+
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Eius vel, rem inventore quo tempora animi mollitia eaque
+                                error qui consectetur in reprehenderit magnam at vitae
+                                corporis quaerat deleniti explicabo nisi.
+                            </p>
+
+                            <a href="#" class="dark-button">
+                                Video Plans
+                                <span>&#9654;</span>
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- Web Development -->
+
+                    <article class="service-card">
+
+                        <img
+                            src="images/web.jpg"
+                            alt="Web Development">
+
+                        <div class="service-content">
+
+                            <h3>
+                                Web Development
+                            </h3>
+
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Eius vel, rem inventore quo tempora animi mollitia eaque
+                                error qui consectetur in reprehenderit magnam at vitae
+                                corporis quaerat deleniti explicabo nisi.
+                            </p>
+
+                            <a href="#" class="dark-button">
+                                Web Plans
+                                <span>&#9654;</span>
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- Print -->
+
+                    <article class="service-card">
+
+                        <img
+                            src="images/print.jpg"
+                            alt="Print">
+
+                        <div class="service-content">
+
+                            <h3>
+                                Print
+                            </h3>
+
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Eius vel, rem inventore quo tempora animi mollitia eaque
+                                error qui consectetur in reprehenderit magnam at vitae
+                                corporis quaerat deleniti explicabo nisi.
+                            </p>
+
+                            <a href="#" class="dark-button">
+                                Print Plans
+                                <span>&#9654;</span>
+                            </a>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ========================================
+             OUR VISION
+        ========================================= -->
+
+        <section class="vision-section">
+
+            <div class="container">
+
+                <div class="vision-content">
+
+                    <h2>
+                        Our Vision
+                    </h2>
+
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Ex voluptatem deleniti iure sit recusantium rerum est commodi
+                        veniam tempora perspiciatis nobis officiis fugiat eaque.
+                        Veritatis exercitationem delectus ex ab laudantium.
+                    </p>
+
+                    <a href="#" class="vision-button">
+                        Learn More
+                        <span>&#9654;</span>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ========================================
+             OUR TEAM
+        ========================================= -->
+
+        <section id="team" class="team-section">
+
+            <div class="container">
+
+                <h2>
+                    Our Team
+                </h2>
+
+                <div class="team-list">
+
+
+                    <!-- John Doe -->
+
+                    <article class="team-member">
+
+                        <div class="team-image">
+
+                            <img
+                                src="images/john.jpg"
+                                alt="John Doe">
+
+                        </div>
+
+                        <div class="team-content">
+
+                            <h3>
+                                John Doe
+                            </h3>
+
+                            <h4>
+                                CEO and Co-owner
+                            </h4>
+
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Amet, aspernatur ratione sed cum ad officiis sint cumque
+                                fugiat similique. Earum laudantium deleniti possimus?
+                                Voluptatem architecto repellendus harum sit voluptatum
+                                tempora.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- Bob Rite -->
+
+                    <article class="team-member team-member-reverse">
+
+                        <div class="team-image">
+
+                            <img
+                                src="images/bob.jpg"
+                                alt="Bob Rite">
+
+                        </div>
+
+                        <div class="team-content">
+
+                            <h3>
+                                Bob Rite
+                            </h3>
+
+                            <h4>
+                                CFO and Co-owner
+                            </h4>
+
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Amet, aspernatur ratione sed cum ad officiis sint cumque
+                                fugiat similique. Earum laudantium deleniti possimus?
+                                Voluptatem architecto repellendus harum sit voluptatum
+                                tempora.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ========================================
+             CONTACT US
+        ========================================= -->
+
+        <section id="contact" class="contact-section">
+
+            <div class="container">
+
+                <h2>
+                    Contact Us
+                </h2>
+
+                <div class="contact-grid">
+
+
+                    <!-- Contact Form -->
+
+                    <div class="message-area">
+
+                        <h3>
+                            Send us a message
+                        </h3>
+
+                        <form class="contact-form" action="#" method="post">
+
+                            <label for="fullname">
+                                Full Name
+                            </label>
+
+                            <input
+                                type="text"
+                                id="fullname"
+                                name="fullname">
+
+
+                            <label for="email">
+                                Email
+                            </label>
+
+                            <input
+                                type="email"
+                                id="email"
+                                name="email">
+
+
+                            <label for="message">
+                                Message
+                            </label>
+
+                            <textarea
+                                id="message"
+                                name="message"
+                                rows="8"></textarea>
+
+
+                            <button type="submit">
+                                Send
+                            </button>
+
+                        </form>
+
+                    </div>
+
+
+                    <!-- Location -->
+
+                    <div class="location-area">
+
+                        <h3>
+                            Location
+                        </h3>
+
+                        <iframe
+                            src="https://www.google.com/maps?q=Algonquin%20College%20Ottawa&output=embed"
+                            title="Algonquin College location"
+                            loading="lazy">
+                        </iframe>
+
+                    </div>
+
+
+                    <!-- Hours of Operation -->
+
+                    <div class="hours-area">
+
+                        <h3>
+                            Hours of operation
+                        </h3>
+
+                        <table>
+
+                            <thead>
+
+                                <tr>
+                                    <th>Days</th>
+                                    <th>Hours</th>
+                                </tr>
+
+                            </thead>
+
+                            <tbody>
+
+                                <tr>
+                                    <td>
+                                        Monday - Friday
+                                    </td>
+
+                                    <td>
+                                        9 AM - 6 PM
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        Saturday - Sunday
+                                    </td>
+
+                                    <td>
+                                        Closed
+                                    </td>
+                                </tr>
+
+                            </tbody>
+
+                        </table>
+
+                    </div>
 
                 </div>
 
@@ -446,19 +638,27 @@
 
     </main>
 
-    <!-- ========================= -->
-    <!-- FOOTER -->
-    <!-- ========================= -->
+
+    <!-- ========================================
+         FOOTER
+    ========================================= -->
 
     <footer class="site-footer">
 
-        <p>
-            &copy; 2026 M Atelier Élégance
-        </p>
+        <div class="container">
 
-        <p>
-            Custom Engagement Rings • Wedding Jewelry • Personalized Luxury Creations
-        </p>
+            <p>
+                &copy; Copyright Three Star Media, 2020
+            </p>
+
+            <p>
+                All images are taken from
+                <a href="https://unsplash.com/">
+                    Unsplash
+                </a>
+            </p>
+
+        </div>
 
     </footer>
 
